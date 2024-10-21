@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Default description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="shortcut icon" href="resources/sun.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+
+<body>
+    
+    <nav>
+        <ul class="navbar padding-horizontal-24">
+            <ul class="navbar-logo">
+                <li class="navbar-item"><a href="#" class="navbar-link">HERE COMES LOGO</a></li>
+            </ul>
+    
+            <ul class="navbar-list">
+                <li class="navbar-item"><a href="#ITEM" class="navbar-link">Instructie</a></li>
+                <li class="navbar-item"><a href="#ITEM" class="navbar-link">Contact</a></li>
+                <li class="navbar-item"><a href="#ITEM" class="navbar-link">Bestel</a></li>
+                <li class="navbar-item"><a href="#ITEM" class="navbar-link">???</a></li>
+            </ul>
+    
+        <!-- Icon menu for Mobile. -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        </ul>
+    
+        <!-- Hidden Menu Content. -->
+        <div id="menu-content">
+            <li class="navbar-item-hidden"><a href="#o" class="navbar-link-hidden">Instructie</a></li>
+            <li class="navbar-item-hidden"><a href="#o" class="navbar-link-hidden">Contact</a></li>
+            <li class="navbar-item-hidden"><a href="#o" class="navbar-link-hidden">Bestel</a></li>
+            <li class="navbar-item-hidden"><a href="#o" class="navbar-link-hidden">????</a></li>
+        </div>
+    </nav>
+
+    <header>
+        <h2 class="contact-title">
+            Heeft u interesse in dit product, neem dan via dit formulier contact op.
+        </h2>
+    </header>
+    
+    <form id="form" action="placeholder">
+
+        <h2>Contactformulier</h2>
+
+        <div class="form-datacontainer">
+            <div class="form-userdata">
+                <label for="first-name">Voornaam</label>
+                <input type="text" id="first-name" name="first-name" placeholder="Voer uw voornaam in" required>
+            </div>
+            <div class="form-userdata">
+                <label for="last-name">Achternaam</label>
+                <input type="text" id="last-name" name="last-name" placeholder="Voer uw achternaam in" required>
+            </div>
+        </div>
+
+        <div class="form-basic">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="voorbeeld@test.com" required>
+        </div>
+
+        <div class="form-datacontainer">
+            <div class="form-userdata">
+                <label for="residence">Woonplaats</label>
+                <input type="text" name="residence" id="residence" placeholder="Voer hier uw woonplaats in" required>
+            </div>
+            <div class="form-userdata">
+                <label for="birthdate">Geboortedatum</label>
+                <input type="date" name="birthdate" id="birthdate" required>
+            </div>
+        </div>
+
+        <div class="form-basic">
+            <label for="subject">Feedback</label>
+            <select name="subject" id="subject" required>
+                <option value="" disabled selected> Kies een optie </option>
+                <option value="question">Vraag</option>
+                <option value="suggestion">Suggestie</option>
+                <option value="fanmail">Opmerking</option>
+            </select>
+        </div>
+
+        <div class="form-basic">
+            <label for="message"> Vraag/Feedback </label>
+            <textarea name="message" id="message"></textarea>
+        </div>
+
+        <div class="form-newsletter">
+            <label>Wilt u de nieuwsbrief ontvangen?</label>
+
+            <div class="newsletter-answer">
+                <div class="newsletter-yes">
+                    <input type="radio" name="newsletter" id="yes" value="yes">
+                    <label for="yes">Ja</label>
+                </div>
+                <div class="newsletter-no">
+                    <input type="radio" name="newsletter" id="no" value="no">
+                    <label for="no">Nee</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-terms">
+            <label for="terms">Ik ga akkoord met de algemene voorwaarden</label>
+            <input type="checkbox" name="terms" id="terms" required>
+        </div>
+
+        <div class="form-button">
+            <button type="submit">Verstuur</button>
+        </div>
+
+
+    </form>
+
+</body>
